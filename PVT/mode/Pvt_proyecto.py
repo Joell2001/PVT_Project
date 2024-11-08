@@ -20,7 +20,7 @@ Yo= 141.5/(API+131.5)
 
 pb=A*(Rs**B)*(Yg**C)*(Yo**D)*(T**E)
 
-#Solubilidad del gas
+#Solubilidad del gas Rs
 
 #Standing
 p=float(input("Ingrese el valor de Presion: "))
