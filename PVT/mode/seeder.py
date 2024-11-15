@@ -8,6 +8,7 @@ def generate_data_with_scipy(num_samples=100, seed=None):
         np.random.seed(seed)
 
     data = {
+        "P": uniform.rvs(loc=100, scale=5000, size=num_samples, random_state=seed),
         "Rs": lognorm.rvs(s=0.5, scale=300, size=num_samples, random_state=seed),  # Log-Normal para Rs
         "T": uniform.rvs(loc=150, scale=200, size=num_samples, random_state=seed), # Uniform para T
         "API": uniform.rvs(loc=20, scale=20, size=num_samples, random_state=seed),  # Uniforme para API
